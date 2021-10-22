@@ -2,33 +2,107 @@ html {
   box-sizing: border-box;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  background-color: #ff9500;
-  font-family: 'Overpass', sans-serif;
+  font-family: Overpass, sans-serif;
   line-height: 1.5;
+  background-image: linear-gradient(#ff9500, #ff5e3a);
 }
-
-    /* - ["@38"]
-    - "#fff"
-    - "#ff9500"
-    - "#ff5e3a"
-    - 'background-image: linear-gradient\('
-    - ":hover"
-    - "display: grid"
-    - "display: flex"
-    - *Typefaces:* `Overpass` (regular & bold)
-    - *Colours:* `#fff`, `#ff9500`, `#ff5e3a`, `rgba(255, 255, 255, .7)`
-    - *Icon sizes:* `8rem`
-    - *Line-heights:* `1.5`
-    - *Font-sizes:* `2rem`, `1.5rem`, `1.125rem`
-    - *Gaps:* `6vmin`
-    - *Margins:* `1.5rem`
-    - *Paddings:* `6vmin`, `1rem`
-    - *Border thicknesses:* `.2rem` */
+/* - ["@38"]
+- ":hover"
+- "display: grid"
+- "display: flex"
+- *Colours:* `#fff`, `#ff9500`, `#ff5e3a`, `rgba(255, 255, 255, .7)`
+- *Icon sizes:* `8rem`
+- *Line-heights:* `1.5`
+- *Font-sizes:* `2rem`, `1.5rem`, `1.125rem`
+- *Gaps:* `6vmin`
+- *Margins:* `1.5rem`
+- *Paddings:* `6vmin`, `1rem`
+- *Border thicknesses:* `.2rem` */
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
 body {
-  display: grid;
+  margin: 1rem;
 }
+
+img {
+  display: block;
+  width: 100%;
+}
+
+section {
+  justify-content: center;
+  margin: 0;
+}
+
+p {
+  color: #fff;
+  padding-bottom: .5rem;
+  margin: 1.5rem;
+  padding: 0;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h2,
+h3 {
+  color: #fff;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: .5rem;
+  padding: 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h3 {
+  margin: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.icon {
+  position: relative;
+  margin-top: 1.5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon svg {
+  width: 8rem;
+  height: 8rem;
+}
+
+section a {
+  border: .2rem solid #fff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.125rem;
+  padding: 1rem;
+  margin: 1rem;
+  justify-content: center;
+
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (min-width: 38em) {
+
+  body {
+    margin: 0;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
