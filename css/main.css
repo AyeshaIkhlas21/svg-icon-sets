@@ -1,0 +1,34 @@
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  background-color: #ff9500;
+  font-family: 'Overpass', sans-serif;
+  line-height: 1.5;
+}
+
+    /* - ["@38"]
+    - "#fff"
+    - "#ff9500"
+    - "#ff5e3a"
+    - 'background-image: linear-gradient\('
+    - ":hover"
+    - "display: grid"
+    - "display: flex"
+    - *Typefaces:* `Overpass` (regular & bold)
+    - *Colours:* `#fff`, `#ff9500`, `#ff5e3a`, `rgba(255, 255, 255, .7)`
+    - *Icon sizes:* `8rem`
+    - *Line-heights:* `1.5`
+    - *Font-sizes:* `2rem`, `1.5rem`, `1.125rem`
+    - *Gaps:* `6vmin`
+    - *Margins:* `1.5rem`
+    - *Paddings:* `6vmin`, `1rem`
+    - *Border thicknesses:* `.2rem` */
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: grid;
+}
