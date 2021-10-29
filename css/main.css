@@ -24,7 +24,10 @@ html {
 }
 
 body {
-  margin: 1rem;
+  margin-right: .5rem;
+  margin-top: -.5rem;
+  margin-left: 1rem;
+
 }
 
 img {
@@ -33,18 +36,16 @@ img {
 }
 
 section {
-  justify-content: center;
   margin: 0;
+  display: block;
 }
 
 p {
   color: #fff;
-  padding-bottom: .5rem;
-  margin: 1.5rem;
+  margin: 1.5rem .5rem;
   padding: 0;
   justify-content: center;
   display: flex;
-  flex-direction: column;
 }
 
 h2,
@@ -54,8 +55,8 @@ h3 {
 
 h2 {
   font-size: 2rem;
-  margin: .5rem;
   padding: 0;
+  margin-bottom: .5rem;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -72,10 +73,11 @@ h3 {
 
 .icon {
   position: relative;
-  margin-top: 1.5rem;
+  margin-top: 1.3rem;
   align-items: center;
   display: flex;
   flex-direction: column;
+  fill: #fff;
 }
 
 .icon svg {
@@ -83,26 +85,107 @@ h3 {
   height: 8rem;
 }
 
+div:nth-last-of-type(3) {
+  margin-top: 0;
+}
+
 section a {
   border: .2rem solid #fff;
   color: #fff;
   text-decoration: none;
-  font-size: 1.125rem;
-  padding: 1rem;
-  margin: 1rem;
   justify-content: center;
-
+  font-size: 1.125rem;
+  padding: 1.125rem;
   display: flex;
-  flex-direction: row;
+  margin: .5rem 1rem;
+  flex-wrap: nowrap;
+  margin-top: 1.5rem;
+  margin-bottom: .5rem;
+/*
+  display: flex;
+  flex-direction: row; */
 }
 
 @media only screen and (min-width: 38em) {
-
+/*
   body {
     margin: 0;
   }
 
   section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "col1 col2 col3";
+    grid-template-rows: 1fr;
+    gap: 6vmin;
   }
+
+  h2 {
+    grid-area: banner;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+
+  p {
+    color: #fff;
+    padding-bottom: .5rem;
+    margin: 1.5rem;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2,
+  h3 {
+    color: #fff;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: .5rem;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h3 {
+    margin: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .icon {
+    position: relative;
+    margin-top: 1.5rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    fill: #fff;
+  }
+
+  .icon svg {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  section a {
+    border: .2rem solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.125rem;
+    padding: 1rem;
+    margin: 1rem;
+    justify-content: center;
+
+    display: flex;
+    flex-direction: row;
+  } */
