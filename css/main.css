@@ -85,10 +85,6 @@ h3 {
   height: 8rem;
 }
 
-div:nth-last-of-type(3) {
-  margin-top: 0;
-}
-
 section a {
   border: .2rem solid #fff;
   color: #fff;
@@ -101,15 +97,16 @@ section a {
   flex-wrap: nowrap;
   margin-top: 1.5rem;
   margin-bottom: .5rem;
-/*
+  /*
   display: flex;
   flex-direction: row; */
 }
 
 @media only screen and (min-width: 38em) {
-/*
+
   body {
-    margin: 0;
+    margin: 2.3rem;
+    padding: 4vmin 1rem;
   }
 
   section {
@@ -117,7 +114,8 @@ section a {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "col1 col2 col3";
     grid-template-rows: 1fr;
-    gap: 6vmin;
+    gap: 1rem;
+    /* margin-top: -1.3rem; */
   }
 
   h2 {
@@ -132,12 +130,13 @@ section a {
 
   p {
     color: #fff;
-    padding-bottom: .5rem;
+    /* padding-bottom: .5rem;
     margin: 1.5rem;
-    padding: 0;
+    padding: 0; */
     justify-content: center;
     display: flex;
     flex-direction: column;
+    padding: .5rem;
   }
 
   h2,
@@ -147,7 +146,7 @@ section a {
 
   h2 {
     font-size: 2rem;
-    margin: .5rem;
+    margin: 1.5rem;
     padding: 0;
     align-items: center;
     display: flex;
@@ -156,16 +155,24 @@ section a {
   }
 
   h3 {
-    margin: 1.3rem;
+    margin: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 1.5rem;
+    /* margin-top: 6vmin; */
+    margin-top: 1rem;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
   }
 
   .icon {
     position: relative;
-    margin-top: 1.5rem;
+    margin-top: .5rem;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -182,10 +189,10 @@ section a {
     color: #fff;
     text-decoration: none;
     font-size: 1.125rem;
-    padding: 1rem;
-    margin: 1rem;
+    padding: .5rem;
+    margin: .5rem;
     justify-content: center;
 
     display: flex;
     flex-direction: row;
-  } */
+  }
