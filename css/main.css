@@ -113,6 +113,8 @@ section a {
   section {
     margin: .5rem;
     padding: .5rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
     margin-top: 1rem;
 
     display: grid;
@@ -129,7 +131,7 @@ section a {
 
   p {
     color: #fff;
-    margin: 1.5rem .5rem;
+    margin: 1.5rem .7rem;
     justify-content: center;
     display: flex;
     padding: 0;
@@ -181,12 +183,13 @@ section a {
     text-decoration: none;
     font-size: 1.125rem;
     margin: 0 .5rem;
-    padding: .5em 1em .6em;
+    padding: 1em;
     margin-top: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-left: 1.2rem;
+    padding-left: 1rem;
+    margin-bottom: .7rem;
   }
 
 }
